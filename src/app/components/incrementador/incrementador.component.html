@@ -1,0 +1,15 @@
+{{leyenda}}
+
+<div class="input-group">
+    <div class="input-group-prepend">
+        <button class="btn btn-secondary" type="button" (click)="cambiarValor(-5)">
+                <i class="mdi mdi-minus"></i>
+        </button>
+    </div>
+    <input #txtProgress type="number" class="form-control" name="progreso" aria-label="Amount (to the nearest dollar)" [(ngModel)]="progreso" (ngModelChange)="onChanges($event)" min="0" max="100">
+    <div class="input-group-append">
+        <button class="btn btn-secondary" type="button" (click)="cambiarValor(+5)">
+            <i class="mdi mdi-plus"></i>
+        </button>
+    </div>
+</div>
